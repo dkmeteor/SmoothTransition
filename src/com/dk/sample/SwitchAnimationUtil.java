@@ -17,8 +17,10 @@ public class SwitchAnimationUtil {
 				bindAnimation(group.getChildAt(i), depth + 1);
 			}
 		} else {
+			view.setAlpha(0);
 			ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(view,
 					"alpha", 0, 1);
+			objectAnimator.setStartDelay(1000*depth);
 			objectAnimator.setDuration(1000);
 			objectAnimator.setInterpolator(new LinearInterpolator());
 			objectAnimator.start();

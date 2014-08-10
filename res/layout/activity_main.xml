@@ -44,15 +44,120 @@
                 android:layout_width="40dp"
                 android:layout_height="60dp"
                 android:gravity="center_vertical"
-                android:textColor="#444444"
-                android:text="Name" />
+                android:text="Name"
+                android:textColor="#444444" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:gravity="right|center_vertical"
-                android:textColor="#444444"
-                android:text="Dean.Ding" />
+                android:text="Dean.Ding"
+                android:textColor="#444444" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:text="Name"
+                android:textColor="#444444" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="right|center_vertical"
+                android:text="Dean.Ding"
+                android:textColor="#444444" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:text="Name"
+                android:textColor="#444444" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="right|center_vertical"
+                android:text="Dean.Ding"
+                android:textColor="#444444" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:text="Name"
+                android:textColor="#444444" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="right|center_vertical"
+                android:text="Dean.Ding"
+                android:textColor="#444444" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:text="Name"
+                android:textColor="#444444" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="right|center_vertical"
+                android:text="Dean.Ding"
+                android:textColor="#444444" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:text="Name"
+                android:textColor="#444444" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="right|center_vertical"
+                android:text="Dean.Ding"
+                android:textColor="#444444" />
         </LinearLayout>
     </LinearLayout>
 
