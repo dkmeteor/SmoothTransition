@@ -13,7 +13,7 @@ public class HorzionActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        new SwitchAnimationUtil().startAnimation(getWindow().getDecorView(), AnimationType.HORZION_LEFT);
+        new SwitchAnimationUtil().startAnimation(getWindow().getDecorView(), AnimationType.HORIZION_LEFT);
     }
 
     @Override
