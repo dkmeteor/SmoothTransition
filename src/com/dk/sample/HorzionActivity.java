@@ -2,20 +2,18 @@ package com.dk.sample;
 
 import com.dk.sample.SwitchAnimationUtil.AnimationType;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
+import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends Activity {
+public class HorzionActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ViewUtils.init(this);
-       new SwitchAnimationUtil().startAnimation(getWindow().getDecorView(), AnimationType.ALPHA);
+        new SwitchAnimationUtil().startAnimation(getWindow().getDecorView(), AnimationType.HORZION_LEFT);
     }
 
     @Override
@@ -26,8 +24,6 @@ public class MainActivity extends Activity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent(MainActivity.this, GridActivity.class);
-        startActivity(intent);
         return super.onOptionsItemSelected(item);
     }
 }

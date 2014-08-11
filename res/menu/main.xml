@@ -3,9 +3,9 @@
     tools:context="com.dk.sample.MainActivity" >
 
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_next"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/action_settings"/>
+        android:title="@string/action_next"/>
 
 </menu>
