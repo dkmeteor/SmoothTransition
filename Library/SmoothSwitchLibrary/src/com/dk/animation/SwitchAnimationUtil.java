@@ -23,30 +23,33 @@ public class SwitchAnimationUtil {
 	}
 
 	public void startAnimation(View root, AnimationType type) {
-		bindAnimation(root, 0, type, true);
+		bindAnimation(root, 0, type);
 	}
 
-	private void bindAnimation(View view, int depth, AnimationType type,
-			boolean isDelay) {
+	private void bindAnimation(View view, int depth, AnimationType type) {
 
 		if (view instanceof ViewGroup) {
 			ViewGroup group = (ViewGroup) view;
-			if (group instanceof ListView
-					&& type == AnimationType.HORIZON_CROSS) {
+			if (type == AnimationType.HORIZON_CROSS) {
+				/*
+				 * Something wrong with it...
+				 * Fixing
+				 */
+				
+				
 				for (int i = 0; i < group.getChildCount(); i++) {
 					bindAnimation(group.getChildAt(i), depth + 1,
 							i % 2 == 0 ? AnimationType.HORIZION_LEFT
-									: AnimationType.HORIZION_RIGHT, false);
+									: AnimationType.HORIZION_RIGHT);
 				}
 			} else {
 				for (int i = 0; i < group.getChildCount(); i++) {
-					bindAnimation(group.getChildAt(i), depth + 1, type, true);
+					bindAnimation(group.getChildAt(i), depth + 1, type);
 				}
 			}
 		} else {
 			runAnimation(view, mDelay * mOrderIndex, type);
-			if (isDelay)
-				mOrderIndex++;
+			mOrderIndex++;
 		}
 	}
 
