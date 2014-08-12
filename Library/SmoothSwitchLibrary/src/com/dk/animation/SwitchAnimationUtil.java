@@ -23,6 +23,8 @@ public class SwitchAnimationUtil {
 	}
 
 	public void startAnimation(View root, AnimationType type) {
+
+		ViewUtils.init(root.getContext());
 		bindAnimation(root, 0, type);
 	}
 
@@ -32,11 +34,9 @@ public class SwitchAnimationUtil {
 			ViewGroup group = (ViewGroup) view;
 			if (type == AnimationType.HORIZON_CROSS) {
 				/*
-				 * Something wrong with it...
-				 * Fixing
+				 * Something wrong with it... Fixing
 				 */
-				
-				
+
 				for (int i = 0; i < group.getChildCount(); i++) {
 					bindAnimation(group.getChildAt(i), depth + 1,
 							i % 2 == 0 ? AnimationType.HORIZION_LEFT

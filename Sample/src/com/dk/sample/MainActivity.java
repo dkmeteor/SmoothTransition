@@ -16,7 +16,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ViewUtils.init(this);
         new SwitchAnimationUtil().startAnimation(getWindow().getDecorView(), Constant.mType);
 
     }
