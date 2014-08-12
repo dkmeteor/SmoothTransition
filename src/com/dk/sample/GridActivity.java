@@ -5,7 +5,6 @@ import com.dk.sample.SwitchAnimationUtil.AnimationType;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -37,7 +36,35 @@ public class GridActivity extends Activity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent(GridActivity.this, HorzionActivity.class);
+        switch (item.getItemId()) {
+        case R.id.action_alpha:
+            Constant.mType = AnimationType.ALPHA;
+            break;
+        case R.id.action_flip_horizon:
+            Constant.mType = AnimationType.FLIP_HORIZON;
+            break;
+        case R.id.action_flip_vertical:
+            Constant.mType = AnimationType.FLIP_VERTICAL;
+            break;
+        case R.id.action_horizon_left:
+            Constant.mType = AnimationType.HORIZION_LEFT;
+            break;
+        case R.id.action_horizon_right:
+            Constant.mType = AnimationType.HORIZION_Right;
+            break;
+        case R.id.action_rotate:
+            Constant.mType = AnimationType.ROTATE;
+            break;
+        case R.id.action_scale:
+            Constant.mType = AnimationType.SCALE;
+            break;
+        case R.id.action_cross:
+            Constant.mType = AnimationType.HORIZON_CROSS;
+            break;
+        case R.id.action_next:
+            break;
+        }
+        Intent intent = new Intent(GridActivity.this, MainActivity.class);
         startActivity(intent);
         return super.onOptionsItemSelected(item);
     }
@@ -47,7 +74,7 @@ public class GridActivity extends Activity {
         super.onWindowFocusChanged(hasFocus);
         if (mSwitchAnimationUtil == null) {
             mSwitchAnimationUtil = new SwitchAnimationUtil();
-            mSwitchAnimationUtil.startAnimation(getWindow().getDecorView(), AnimationType.SCALE);
+            mSwitchAnimationUtil.startAnimation(getWindow().getDecorView(), Constant.mType);
         }
     }
 
