@@ -6,6 +6,9 @@
 
 Smooth activity switch animation.
 
+	You can get all these animation by just one line:
+
+
 ## License
 Copyright (c) 2014 [Dean Ding](http://dk-exp.com)
 
