@@ -6,7 +6,7 @@
 
 Smooth activity switch animation.
 
-You can get all these animation by just one line:
+You can get all these animations by just one line:
 
 	new SwitchAnimationUtil().startAnimation(getWindow().getDecorView(), AnimationType.SCALE);
 
