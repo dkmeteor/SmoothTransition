@@ -90,7 +90,6 @@ public class SwitchAnimationUtil {
 		ObjectAnimator objectAnimator = ObjectAnimator.ofFloat(view,
 				"translationX", -ViewUtils.getScreenWidth(), 0);
 		objectAnimator.setInterpolator(new LinearInterpolator());
-		objectAnimator.start();
 		ObjectAnimator objectAnimatorAlpha = ObjectAnimator.ofFloat(view,
 				"alpha", 0f, 1f);
 		AnimatorSet set = new AnimatorSet();
