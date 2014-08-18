@@ -29,6 +29,8 @@
         </activity>
         <activity android:name="com.dk.sample.ListActivity" >
         </activity>
+        <activity android:name="com.dk.sample.FragmentDemo" >
+        </activity>
     </application>
 
 </manifest>
