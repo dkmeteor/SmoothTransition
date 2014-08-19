@@ -19,5 +19,16 @@
         android:gravity="center"
         android:textSize="16sp"
         android:text="Something out of fragment" />
+    
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="54dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="Something out of fragment" />
 
 </RelativeLayout>
