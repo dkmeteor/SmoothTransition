@@ -18,7 +18,7 @@ You can get all these animations by just one line:
 If you want to use these aniamtions on ListView / GridView or other AdapterView:
 
     @Override
-	public void onWindowFocusChanged(boolean hasFocus) {
+    public void onWindowFocusChanged(boolean hasFocus) {
 		super.onWindowFocusChanged(hasFocus);
 		if (mSwitchAnimationUtil == null) {
 			mSwitchAnimationUtil = new SwitchAnimationUtil();
