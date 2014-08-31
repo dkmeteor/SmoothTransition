@@ -1,8 +1,12 @@
 
 # Demo
-![Examples list](http://dk-exp.com/wp-content/uploads/2014/08/Smooth.gif)
+![Examples list](https://raw.githubusercontent.com/dkmeteor/SmoothTransition/master/gif/flip.gif)
 
-![Examples list](http://dk-exp.com/wp-content/uploads/2014/08/Smooth2-_big.gif)
+![Examples list](https://raw.githubusercontent.com/dkmeteor/SmoothTransition/master/gif/horizon.gif)
+
+![Examples list](https://raw.githubusercontent.com/dkmeteor/SmoothTransition/master/gif/rotate.gif)
+
+![Examples list](https://raw.githubusercontent.com/dkmeteor/SmoothTransition/master/gif/scale.gif)
 
 # How to use
 
