@@ -64,7 +64,7 @@ public class ListActivity extends Activity {
 		case R.id.action_next:
 			break;
 		}
-		Intent intent = new Intent(ListActivity.this, MainActivity.class);
+		Intent intent = new Intent(ListActivity.this, FragmentDemo.class);
 		startActivity(intent);
 		return super.onOptionsItemSelected(item);
 	}
